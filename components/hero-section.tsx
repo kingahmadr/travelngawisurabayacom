@@ -8,7 +8,8 @@ export function HeroSection() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          // src="/placeholder.svg?height=1080&width=1920"
+          src="https://i.ibb.co.com/5gSS3d0j/11.jpg?height=1080&width=1920"
           alt="Beautiful East Java landscape with lush green mountains and traditional villages"
           fill
           className="object-cover"

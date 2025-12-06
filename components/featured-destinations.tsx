@@ -52,12 +52,11 @@ export function FeaturedDestinations() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-tollway-charcoal mb-4">
-            Destinasi <span className="text-java-green">Unggulan</span>
+            Rute <span className="text-java-green">Perjalanan</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Temukan tempat-tempat paling spektakuler di Jawa Timur dengan pengalaman perjalanan yang telah kami kurasi
-            dengan cermat
-          </p>
+          {/* <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Rute perjalanan yang kami sediakan
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
