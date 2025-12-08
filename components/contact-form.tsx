@@ -15,15 +15,49 @@ export function ContactForm() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  // const handleSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault()
+  //   setIsLoading(true)
+
+  //   // Simulate form submission
+  //   await new Promise((resolve) => setTimeout(resolve, 2000))
+
+  //   setIsLoading(false)
+  //   setIsSubmitted(true)
+  // }
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsLoading(true)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 2000))
+    const form = e.currentTarget
+    const data = new FormData(form)
+
+    const firstName = data.get("firstName")
+    const lastName = data.get("lastName")
+    const email = data.get("email")
+    const phone = data.get("phone")
+    const travelType = data.get("travelType")
+    const travelDate = data.get("travelDate")
+    const message = data.get("message")
+
+    const fullMessage = `
+        Halo, saya ingin melakukan reservasi travel.
+
+        Nama: ${firstName} ${lastName}
+        Email: ${email}
+        Telepon: ${phone || "-"}
+        Jenis Layanan: ${travelType || "-"}
+        Tanggal Perjalanan: ${travelDate || "-"}
+        Catatan:
+        ${message}
+      `.trim()
+
+    const encodedMessage = encodeURIComponent(fullMessage)
+
+    const waNumber = "6285895162613"
+    window.location.href = `https://wa.me/${waNumber}?text=${encodedMessage}`
 
     setIsLoading(false)
-    setIsSubmitted(true)
   }
 
   if (isSubmitted) {

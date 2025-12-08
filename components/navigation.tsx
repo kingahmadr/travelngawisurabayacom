@@ -63,7 +63,13 @@ export function Navigation() {
             <Link href="/contact" className="text-tollway-charcoal hover:text-java-green transition-colors">
               Kontak
             </Link>
-            <Button className="bg-java-green hover:bg-java-green/90 text-white">Pesan Sekarang</Button>
+            <a
+              href="https://wa.me/6285895162613?text=Saya%20tertarik%20untuk%20reservasi%20travel"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-java-green hover:bg-java-green/90 text-white">Pesan Sekarang</Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -92,13 +98,6 @@ export function Navigation() {
               >
                 Tentang Kami
               </Link>
-              {/* <Link
-                href="/services"
-                className="block px-3 py-2 text-tollway-charcoal hover:text-java-green"
-                onClick={() => setIsOpen(false)}
-              >
-                Layanan
-              </Link> */}
               <Link
                 href="/gallery"
                 className="block px-3 py-2 text-tollway-charcoal hover:text-java-green"
@@ -114,7 +113,13 @@ export function Navigation() {
                 Kontak
               </Link>
               <div className="px-3 py-2">
-                <Button className="w-full bg-java-green hover:bg-java-green/90 text-white">Pesan Sekarang</Button>
+                <a
+                  href="https://wa.me/6285895162613?text=Saya%20tertarik%20untuk%20reservasi%20travel"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button className="bg-java-green hover:bg-java-green/90 text-white">Pesan Sekarang</Button>
+                </a>
               </div>
             </div>
           </div>
