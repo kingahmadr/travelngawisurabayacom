@@ -1,7 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import { Card, CardContent } from "@/components/ui/card"
-import { Users, Award, Heart, Globe } from "lucide-react"
+// import { Card, CardContent } from "@/components/ui/card"
+// import { Users, Award, Heart, Globe } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Tentang Kami - Travel Ngawi Surabaya",
@@ -13,13 +13,15 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative h-96 flex items-center justify-center">
+      {/* <section className="relative h-96 flex items-center justify-center"> */}
+      <section className="relative h-[400px] md:h-[450px] flex items-center justify-center">
         <div className="absolute inset-0">
           <Image
-            src="/placeholder.svg?height=600&width=1200"
-            alt="Our team in East Java"
+            src="https://i.ibb.co.com/r2VMkqjK/background-about-us.png"
+            alt="Story behind Travel Ngawi Surabaya"
             fill
-            className="object-cover"
+            className="object-cover object-bottom"
+            // sizes="100vw"
           />
           <div className="absolute inset-0 bg-black/50" />
         </div>
@@ -40,31 +42,35 @@ export default function AboutPage() {
 
           <div className="prose prose-lg max-w-none text-gray-600">
             <p className="text-xl leading-relaxed mb-6">
-              Travel Ngawi Surabaya didirikan pada tahun 2019 oleh sekelompok pemandu lokal yang bersemangat ingin
-              berbagi keindahan autentik Jawa Timur dengan dunia. Yang dimulai sebagai petualangan akhir pekan bersama
-              teman-teman telah berkembang menjadi agen perjalanan terpercaya yang telah menyambut lebih dari 500
-              wisatawan dari seluruh dunia.
+              CTR Tour and Travel adalah layanan Travel Ngawi-Surabaya yg didirikan sejak 2020 sampai saat ini. 
+              CTR Tour and Travel selalu mengutamakan pelayanan dan membuat pelanggan merasa aman dan nyaman ketika bepergian Ngawi-Surabaya atau rute sebaliknya, dengan rute yg di lewati yaitu start jogorogo, Ngawi, Karangjati, Caruban, Nganjuk, Jombang, Mojokerto, Sidoarjo dan Surabaya.
+              Kami juga melayani rute ngawi-magetan-madiun-surabaya.
+
             </p>
 
-            <p className="text-lg leading-relaxed mb-6">
-              Para pendiri kami, yang lahir dan besar di jantung Jawa Timur, menyadari bahwa sebagian besar wisatawan
-              hanya mengunjungi destinasi terkenal, melewatkan harta karun tersembunyi di wilayah ini. Kami bertekad
-              mengubah hal itu dengan menciptakan pengalaman mendalam yang menampilkan tidak hanya pemandangan
-              menakjubkan, tetapi juga budaya kaya, keramahan hangat, dan tradisi autentik tanah air kami.
-            </p>
+            <div className="text-lg leading-relaxed mb-6">
+              Selain Travel Ngawi-Surabaya/Surabaya Ngawi CTR Tour and Travel juga menyediakan pelayanan: 
+              <ol type="1" className="list-disc list-inside">
+                <li>Charter mobil pribadi (calya, Sigra, Xenia, Avanza, Innova)</li>
+                <li>L300 12 Seat dilengkapi dengan AC</li>
+                <li>Hiace, 14 Seat untuk sensasi perjalanan mewah anda</li>
+                <li>Elf long 19 seat, Elf giga 21 seat </li>
+                <li>Medium Bus 35 seat & 40 seat</li>
+                <li>Big Bus 50 seat</li>
+              </ol>
+            </div>
 
             <p className="text-lg leading-relaxed mb-8">
-              Hari ini, kami bangga diakui sebagai salah satu agen perjalanan butik terkemuka di Jawa Timur, yang
-              mengkhususkan diri pada tur grup kecil yang mengutamakan keberlanjutan, penghormatan budaya, dan
-              pengalaman tak terlupakan. Setiap perjalanan yang kami rancang adalah karya cinta, dirancang untuk
-              menciptakan koneksi yang langgeng antara tamu kami dan tanah luar biasa yang kami sebut rumah.
+               Apabila kalian yang ingin berwisata tapi malas untuk memikirkan tujuan, jadwal dll.
+               CTR Tour and Travel juga menyediakan layanan EO (Event Organizer).
+               Jadi kita yang cari semua mulai dari Tujuan/Destinasi, Armada, Jadwal, Rundown acara, tempat istirahat, tempat makan, tempat oleh-olehnya :)
             </p>
           </div>
         </div>
       </section>
 
       {/* Mission & Values */}
-      <section className="py-20 bg-cloud-mist">
+      {/* <section className="py-20 bg-cloud-mist">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-tollway-charcoal mb-4">
@@ -108,10 +114,10 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Team Video */}
-      <section className="py-20 bg-white">
+      {/* <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold text-tollway-charcoal mb-8">
             Kenali <span className="text-java-green">Tim</span> Kami
@@ -130,7 +136,7 @@ export default function AboutPage() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
