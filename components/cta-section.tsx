@@ -39,7 +39,7 @@ export function CTASection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-java-green px-8 py-4 text-lg"
+            className="border-white text-white max-sm:bg-white max-sm:text-java-green hover:bg-white hover:text-java-green px-8 py-4 text-lg"
           >
 
             <a

@@ -8,7 +8,8 @@ const reviews = [
     id: 1,
     title: "Armada yang nyaman",
     text: "Kami menggunakan armada yang nyaman untuk mengantarkan Anda sampai ke tujuan.",
-    image: "/placeholder.svg?height=400&width=600",
+    // image: "/placeholder.svg?height=400&width=600",
+    image: "/bg-white-img.jpg",
     icons: "https://i.ibb.co.com/C3mhkD8c/car-wash-300x300.png",
   },
   {
@@ -16,20 +17,20 @@ const reviews = [
     title: "Sopir yang berpengalaman",
     text: "Sopir yang sangat berpengalaman dan memiliki keramahan yang luar biasa dalam melayani pelanggan.",
     icons: "https://i.ibb.co.com/twmvDXk4/driver-300x300.png",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/bg-white-img.jpg",
   },
   {
     id: 3,
     title: "Ketepatan Waktu",
     text: "Kami selalu mengutamakan ketepatan waktu dalam setiap perjalanan Anda.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/bg-white-img.jpg",
     icons: "https://i.ibb.co.com/TqM5vnyL/back-in-time-300x300.png"
   },
   {
     id: 4,
     title: "Maksimal 5 Penumpang",
     text: "Kenyamanan penumpang dalam perjalanan adalah prioritas kami dengan maksimal 5 penumpang setiap perjalanan",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/bg-white-img.jpg",
     icons: "https://i.ibb.co.com/4gWB6XtG/seat-300x300.png"
   },
 ]

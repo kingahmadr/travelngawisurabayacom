@@ -45,7 +45,7 @@ export function HeroSection() {
           <Button
             variant="outline"
             size="lg"
-            className="border-white text-white hover:bg-white hover:text-tollway-charcoal px-8 py-4 text-lg"
+            className="border-white text-white max-sm:bg-white max-sm:text-tollway-charcoal hover:bg-white hover:text-tollway-charcoal px-8 py-4 text-lg"
           >
             <Play className="mr-2 h-5 w-5" />
             <a target="_blank" href="https://www.tiktok.com/@ctrtourntravel?is_from_webapp=1&sender_device=pc" rel="noopener noreferrer">

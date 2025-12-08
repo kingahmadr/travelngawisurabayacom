@@ -73,7 +73,8 @@ export function FeaturedDestinations() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {destinations.map((destination) => (
-            <Card key={destination.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            // <Card key={destination.id} className="overflow-hidden hover:shadow-xl transition-shadow duration-300">
+            <Card key={destination.id} className="overflow-hidden">
               <div className="relative">
                 <Image
                   src={destination.image || "/placeholder.svg"}
