@@ -42,19 +42,19 @@ export function ContactForm() {
 
     const fullMessage = `
         Halo, saya ingin melakukan reservasi travel.
-  Nama: ${firstName} ${lastName}
-  Email: ${email}
-  Telepon: ${phone || "-"}
-  Jenis Layanan: ${travelType || "-"}
-  Tanggal Perjalanan: ${travelDate || "-"}
-  Catatan:
-  ${message}
+        
+Nama: ${firstName} ${lastName}
+Email: ${email}
+Telepon: ${phone || "-"}
+Jenis Layanan: ${travelType || "-"}
+Tanggal Perjalanan: ${travelDate || "-"}
+Catatan:
+${message}
       `.trim()
 
     const encodedMessage = encodeURIComponent(fullMessage)
 
     const waNumber = "6285895162613"
-    // const waNumber = "6283890514596"
     window.location.href = `https://wa.me/${waNumber}?text=${encodedMessage}`
 
     setIsLoading(false)
