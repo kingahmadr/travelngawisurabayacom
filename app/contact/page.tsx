@@ -34,9 +34,9 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-tollway-charcoal mb-2">Alamat Kantor</h3>
                       <p className="text-gray-600">
-                        Jl. Raya Ngawi-Surabaya No. 123
+                        Jl. Raya Kedunggalar, Dawung Rejo
                         <br />
-                        Ngawi, East Java 63219
+                        Kec. Jogorogo, Kabupaten Ngawi, Jawa Timur 63262
                         <br />
                         Indonesia
                       </p>
@@ -52,18 +52,17 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-tollway-charcoal mb-2">Nomor Telepon</h3>
                       <p className="text-gray-600">
-                        Utama: +62 123 456 7890
+                        Utama: +62 8589 5162 613
                         <br />
-                        WhatsApp: +62 987 654 3210
+                        WhatsApp: +62 8589 5162 613
                         <br />
-                        Darurat: +62 555 123 4567
                       </p>
                     </div>
                   </div>
                 </CardContent>
               </Card>
 
-              <Card>
+              {/* <Card>
                 <CardContent className="p-6">
                   <div className="flex items-start space-x-4">
                     <Mail className="h-6 w-6 text-java-green mt-1" />
@@ -79,7 +78,7 @@ export default function ContactPage() {
                     </div>
                   </div>
                 </CardContent>
-              </Card>
+              </Card> */}
 
               <Card>
                 <CardContent className="p-6">
@@ -88,13 +87,13 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-semibold text-tollway-charcoal mb-2">Jam Operasional</h3>
                       <p className="text-gray-600">
-                        Senin - Jumat: 08:00 - 18:00
+                        Setiap hari
                         <br />
-                        Sabtu: 09:00 - 16:00
+                        Pagi start Jogorogo jam 7.00
                         <br />
-                        Minggu: 10:00 - 14:00
+                        Malam start Jogorogo jam 19.00
                         <br />
-                        <span className="text-java-green">Dukungan Darurat 24/7</span>
+                        {/* <span className="text-java-green">Dukungan Darurat 24/7</span> */}
                       </p>
                     </div>
                   </div>
@@ -120,7 +119,7 @@ export default function ContactPage() {
             <CardContent className="p-0">
               <div className="aspect-video w-full">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.123456789!2d111.123456!3d-7.123456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwMDcnMjQuNCJTIDExMcKwMDcnMjQuNCJF!5e0!3m2!1sen!2sid!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3955.576333695164!2d111.2582932!3d-7.5119319!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e79f3e9ed83987f%3A0xa9f518892020c210!2sCTR%20Tour%20And%20Travel!5e0!3m2!1sen!2sid!4v1765159779089!5m2!1sen!2sid"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

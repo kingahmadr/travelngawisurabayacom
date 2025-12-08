@@ -4,6 +4,12 @@ import { useState } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Menu, X, MapPin } from "lucide-react"
+import { DropdownMenu, 
+  DropdownMenuTrigger, 
+  DropdownMenuPortal,
+  DropdownMenuContent,
+  DropdownMenuItem
+ } from "@/components/ui/dropdown-menu"
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -27,9 +33,30 @@ export function Navigation() {
             <Link href="/about" className="text-tollway-charcoal hover:text-java-green transition-colors">
               Tentang Kami
             </Link>
-            <Link href="/services" className="text-tollway-charcoal hover:text-java-green transition-colors">
-              Layanan
-            </Link>
+            {/* <DropdownMenu >
+                <DropdownMenuTrigger>
+                  <span className="text-tollway-charcoal hover:text-java-green transition-colors cursor-pointer">
+                    Layanan
+                  </span>
+                </DropdownMenuTrigger>
+
+                <DropdownMenuPortal>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                      <Link href="/services/charter" className="w-full">
+                        Sewa Mobil Charter
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link href="/services/shuttle" className="w-full">
+                        Shuttle Travel
+                      </Link>
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenuPortal>
+
+            </DropdownMenu> */}
+               
             <Link href="/gallery" className="text-tollway-charcoal hover:text-java-green transition-colors">
               Galeri
             </Link>
@@ -65,13 +92,13 @@ export function Navigation() {
               >
                 Tentang Kami
               </Link>
-              <Link
+              {/* <Link
                 href="/services"
                 className="block px-3 py-2 text-tollway-charcoal hover:text-java-green"
                 onClick={() => setIsOpen(false)}
               >
                 Layanan
-              </Link>
+              </Link> */}
               <Link
                 href="/gallery"
                 className="block px-3 py-2 text-tollway-charcoal hover:text-java-green"

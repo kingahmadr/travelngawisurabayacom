@@ -78,73 +78,40 @@ export function ContactForm() {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div>
+        {/* <div>
           <Label htmlFor="country" className="text-tollway-charcoal">
             Negara
           </Label>
           <Input id="country" name="country" className="mt-1" placeholder="Negara Anda" />
-        </div>
+        </div> */}
         <div>
           <Label htmlFor="travelType" className="text-tollway-charcoal">
-            Jenis Perjalanan
+            Jenis Layanan
           </Label>
           <Select name="travelType">
             <SelectTrigger className="mt-1">
-              <SelectValue placeholder="Pilih jenis perjalanan" />
+              <SelectValue placeholder="Pilih jenis layanan" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="solo">Perjalanan Solo</SelectItem>
-              <SelectItem value="couple">Pasangan</SelectItem>
-              <SelectItem value="family">Keluarga</SelectItem>
-              <SelectItem value="group">Grup</SelectItem>
-              <SelectItem value="business">Bisnis</SelectItem>
+              <SelectItem value="travel">Travel</SelectItem>
+              <SelectItem value="carter">Carter / Drop segala jurusan</SelectItem>
+              <SelectItem value="rentElfHiace">Sewa elf / hiace</SelectItem>
+              <SelectItem value="rentBus">Sewa Bus Pariwisata</SelectItem>
+              <SelectItem value="wisata">Biro perjalanan wisata</SelectItem>
             </SelectContent>
           </Select>
         </div>
-      </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <Label htmlFor="travelDate" className="text-tollway-charcoal">
             Tanggal Perjalanan Diinginkan
           </Label>
           <Input id="travelDate" name="travelDate" type="date" className="mt-1" />
         </div>
-        <div>
-          <Label htmlFor="budget" className="text-tollway-charcoal">
-            Kisaran Budget (USD)
-          </Label>
-          <Select name="budget">
-            <SelectTrigger className="mt-1">
-              <SelectValue placeholder="Pilih kisaran budget" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="under-500">Di bawah $500</SelectItem>
-              <SelectItem value="500-1000">$500 - $1,000</SelectItem>
-              <SelectItem value="1000-2000">$1,000 - $2,000</SelectItem>
-              <SelectItem value="2000-5000">$2,000 - $5,000</SelectItem>
-              <SelectItem value="over-5000">Over $5,000</SelectItem>
-            </SelectContent>
-          </Select>
-        </div>
-      </div>
-
-      <div>
-        <Label htmlFor="interests" className="text-tollway-charcoal">
-          Minat & Destinasi
-        </Label>
-        <Textarea
-          id="interests"
-          name="interests"
-          className="mt-1"
-          rows={3}
-          placeholder="Ceritakan tentang minat Anda dan destinasi mana yang ingin dikunjungi..."
-        />
       </div>
 
       <div>
         <Label htmlFor="message" className="text-tollway-charcoal">
-          Pesan *
+          Catatan tambahan *
         </Label>
         <Textarea
           id="message"
@@ -152,7 +119,7 @@ export function ContactForm() {
           required
           className="mt-1"
           rows={4}
-          placeholder="Ceritakan lebih lanjut tentang rencana perjalanan Anda, kebutuhan khusus, atau pertanyaan yang Anda miliki..."
+          placeholder="Ceritakan lebih lanjut tentang kebutuhan khusus, atau pertanyaan yang Anda miliki..."
         />
       </div>
 
